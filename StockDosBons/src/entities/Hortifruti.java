@@ -2,12 +2,12 @@ package entities;
 
 public class Hortifruti {
     private String name;
-    private double pricePerKilo;
+    private double price;
     private int quantity;
 
-    public Hortifruti(String name, double pricePerKilo, int quantity) {
+    public Hortifruti(String name, double price, int quantity) {
         this.name = name;
-        this.pricePerKilo = pricePerKilo;
+        this.price = price;
         this.quantity = quantity;
     }
 
@@ -19,12 +19,12 @@ public class Hortifruti {
         this.name = name;
     }
 
-    public double getPricePerKilo() {
-        return pricePerKilo;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPricePerKilo(double pricePerKilo) {
-        this.pricePerKilo = pricePerKilo;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getQuantity() {
@@ -33,5 +33,14 @@ public class Hortifruti {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    public double totalValueHortifruti() {
+        return price * quantity;
+    }
+
+    public String toString() {
+        return "\n Nome: " + getName() + "\n Valor: R$" + String.format("%.2f", getPrice()) + "\n Quantidade:"
+                + quantity + " unidades\n Total: R$" + String.format("%.2f", totalValueHortifruti());
     }
 }

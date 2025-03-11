@@ -10,14 +10,14 @@ public class App {
         System.out.print("Digite o nome da fruta: ");
         String name = input.next();
 
-        System.out.print("Digite o preço por kg: ");
-        double pricePerKilo = input.nextDouble();
+        System.out.print("Digite o preço da unidade: ");
+        double price = input.nextDouble();
 
         System.out.print("Digite a quantidade em stock: ");
         int quantity = input.nextInt();
 
-        Hortifruti fruit = new Hortifruti(name, pricePerKilo, quantity);
+        Hortifruti fruit = new Hortifruti(name, price, quantity);
 
-        System.out.println("Quantidade: " + fruit.getQuantity());
+        System.out.print(fruit.toString());
     }
 }
