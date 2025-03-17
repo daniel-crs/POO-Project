@@ -41,6 +41,6 @@ public class Hortifruti {
 
     public String toString() {
         return "\n Nome: " + getName() + "\n Valor: R$" + String.format("%.2f", getPrice()) + "\n Quantidade:"
-                + quantity + " unidades\n Total: R$" + String.format("%.2f", totalValueHortifruti());
+                + quantity + " unidades\n Total: R$" + String.format("%.2f", totalValueHortifruti()) + "\n";
     }
 }
