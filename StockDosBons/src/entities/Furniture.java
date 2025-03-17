@@ -65,4 +65,9 @@ public class Furniture {
     public void setAge(int age) {
         this.age = age;
     }
+    public String toString() {
+    	
+    	return "name :"+getName()+"\n age:"+getAge()+"\n size: "+String.format(	".2f",getHeight())+"x"+String.format(".2f",getWidth())+"m"+
+    	"\nPrice:"+String.format(".2f",getPrice())+"\n material:"+getMaterial();
+    }
 }
