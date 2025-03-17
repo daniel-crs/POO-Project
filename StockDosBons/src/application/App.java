@@ -21,6 +21,7 @@ public class App {
 
         System.out.print(fruit.toString());
 
+        
         System.out.print("Digite o nome do eletrônico: ");
         String nameE = input.next();
 
