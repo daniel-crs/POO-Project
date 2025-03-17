@@ -2,15 +2,15 @@ package entities;
 
 public class Electronics {
 
-    private String nome;
+    private String name;
     private String mark;
     private double price;
     private String fabricator;
     private String model;
     private int yearLaunch;
 
-    public void Electronics(String nome, String mark, double price, String fabricator, String model, int yearLaunch){
-        this.nome = nome;
+    public Electronics(String name, String mark, double price, String fabricator, String model, int yearLaunch){
+        this.name = name;
         this.mark = mark;
         this.price = price;
         this.fabricator = fabricator;
@@ -18,12 +18,12 @@ public class Electronics {
         this.yearLaunch = yearLaunch;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNome(String name) {
+        this.name = name;
     }
 
     public String getMark() {
@@ -66,4 +66,8 @@ public class Electronics {
         this.yearLaunch = yearLaunch;
     }
 
+    public String toString() {
+        return "\n Nome: " + getName() + "\n Marca: " + getMark() + "\n Valor: R$" + String.format("%.2f", getPrice()) 
+        + "\n Fabricante: " + getFabricator() + "\n Modelo: " + getModel() + "\n Ano de lançamento: " + getYearLaunch();
+    }
 }
