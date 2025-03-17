@@ -19,5 +19,6 @@ public class App {
         Hortifruti fruit = new Hortifruti(name, price, quantity);
 
         System.out.print(fruit.toString());
+
     }
 }
