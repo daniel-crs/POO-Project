@@ -3,6 +3,7 @@ package application;
 import java.util.Scanner;
 import entities.Hortifruti;
 import entities.Electronics;
+import entities.Furniture;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -10,36 +11,11 @@ public class App {
 
         int option, flag = 0;
 
-        System.out.print("Digite o nome da fruta: ");
-        String name = input.next();
+        Electronics myElectronic = new Electronics();
 
-        System.out.print("Digite o preço da unidade: ");
-        double price = input.nextDouble();
+        Furniture myFurniture = new Furniture();
 
-        System.out.print("Digite a quantidade em stock: ");
-        int quantity = input.nextInt();
-
-        Hortifruti fruit = new Hortifruti(name, price, quantity);
-
-        System.out.print("Digite o nome do eletrônico: ");
-        String nameE = input.next();
-
-        System.out.print("Digite a marca: ");
-        String mark = input.next();
-
-        System.out.print("Digite o preço: ");
-        double priceE = input.nextDouble();
-
-        System.out.print("Digite o fabricante: ");
-        String fabricator = input.next();
-
-        System.out.print("Digite o modelo: ");
-        String model = input.next();
-
-        System.out.print("Digite o ano de lançamento: ");
-        int yearLaunch = input.nextInt();
-
-        Electronics electronic = new Electronics(nameE, mark, priceE, fabricator, model, yearLaunch);
+        Hortifruti myHortifruti = new Hortifruti();
 
         do {
             info_options();
@@ -50,15 +26,12 @@ public class App {
             switch (option) {
 
                 case 1:
-                    System.out.print(fruit.toString());
                     break;
 
                 case 2:
-                    System.out.print(electronic.toString());
                     break;
 
                 case 3:
-                    System.out.print("Eletronics vai aqui.");
                     break;
 
                 case 0:
