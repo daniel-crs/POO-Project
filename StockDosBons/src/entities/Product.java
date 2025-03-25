@@ -30,7 +30,7 @@ public class Product {
     }
 
     public void exhibitionProductsData() {
-        System.out.println("\n--- Ficha Literária ---");
+        System.out.println("\n--- Ficha do Produto ---");
         System.out.println("Nome do produto: " + name);
         System.out.println("Valor R$ : " + price);
         System.out.println("Qauntidade: " + quantity);
