@@ -38,4 +38,14 @@ public class Electronics extends Product {
     public void setYearLaunch(int yearLaunch) {
         this.yearLaunch = yearLaunch;
     }
+
+    @Override
+    public void exhibitionProductsData() {
+        super.exhibitionProductsData();
+        
+        System.out.println("Marca: " + mark);
+        System.out.println("Fabricante: " + fabricator);
+        System.out.println("Modelo: " + model);
+        System.out.println("Ano de lançamento: " + yearLaunch);
+    }
 }

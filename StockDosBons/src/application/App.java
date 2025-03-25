@@ -17,6 +17,15 @@ public class App {
 
         Hortifruti myHortifruti = new Hortifruti();
 
+        myElectronic.setName("galax A21s");
+        myElectronic.setPrice(1200.00);
+        myElectronic.setQuantity(11);
+        myElectronic.setMark("Samsung");
+        myElectronic.setFabricator("Samsung");
+        myElectronic.setModel("A21s");
+        myElectronic.setYearLaunch(2020);
+        //myElectronic.exhibitionProductsData();
+        
         do {
             info_options();
 
