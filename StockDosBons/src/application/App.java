@@ -1,9 +1,9 @@
 package application;
 
-import java.util.Scanner;
-import entities.Hortifruti;
 import entities.Electronics;
 import entities.Furniture;
+import entities.Hortifruti;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -26,6 +26,16 @@ public class App {
         myElectronic.setYearLaunch(2020);
         //myElectronic.exhibitionProductsData();
         
+
+        myFurniture.setName("Guarda-Roupa");
+        myFurniture.setPrice(350.34);
+        myFurniture.setMaterial("Madeira");
+        myFurniture.setQuantity(4);
+        myFurniture.setWidth(4.0);
+        myFurniture.setHeight(2.5);
+        myFurniture.setAge(10);
+        myFurniture.exhibitionProductsData();
+
         do {
             info_options();
 
