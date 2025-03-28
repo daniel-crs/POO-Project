@@ -5,6 +5,15 @@ public class Product {
     protected double price;
     protected int quantity;
 
+    public Product() {
+    }
+
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     public String getName() {
         return name;
     }
@@ -33,7 +42,7 @@ public class Product {
         System.out.println("\n--- Ficha do Produto ---");
         System.out.println("Nome do produto: " + name);
         System.out.println("Valor R$ : " + price);
-        System.out.println("Qauntidade: " + quantity);
+        System.out.println("Quantidade: " + quantity);
     }
 
 }
