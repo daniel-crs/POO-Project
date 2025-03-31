@@ -14,8 +14,8 @@ public class App {
         Electronics myElectronic = new Electronics();
 
         Furniture myFurniture = new Furniture();
-        
-        Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 30, 100);
+
+        Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 35, 100);
 
         myElectronic.setName("galax A21s");
         myElectronic.setPrice(1200.00);
@@ -25,7 +25,7 @@ public class App {
         myElectronic.setModel("A21s");
         myElectronic.setYearLaunch(2020);
         myElectronic.exhibitionProductsData();
-        
+
         do {
             info_options();
 
