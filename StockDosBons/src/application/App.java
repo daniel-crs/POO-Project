@@ -14,27 +14,32 @@ public class App {
         Electronics myElectronic = new Electronics();
 
         Furniture myFurniture = new Furniture();
-        
-        Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 30, 100);
+        try {
 
-        myElectronic.setName("galax A21s");
-        myElectronic.setPrice(1200.00);
-        myElectronic.setQuantity(11);
-        myElectronic.setMark("Samsung");
-        myElectronic.setFabricator("Samsung");
-        myElectronic.setModel("A21s");
-        myElectronic.setYearLaunch(2020);
-        myElectronic.exhibitionProductsData();
-        
+            Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 30, 100);
 
-        myFurniture.setName("Guarda-Roupa");
-        myFurniture.setPrice(350.34);
-        myFurniture.setMaterial("Madeira");
-        myFurniture.setQuantity(4);
-        myFurniture.setWidth(4.0);
-        myFurniture.setHeight(2.5);
-        myFurniture.setAge(10);
-        myFurniture.exhibitionProductsData();
+            myElectronic.setName("galax A21s");
+            myElectronic.setPrice(1200.00);
+            myElectronic.setQuantity(11);
+            myElectronic.setMark("Samsung");
+            myElectronic.setFabricator("Samsung");
+            myElectronic.setModel("A21s");
+            myElectronic.setYearLaunch(2020);
+            myElectronic.exhibitionProductsData();
+
+            myFurniture.setName("Guarda-Roupa");
+            myFurniture.setPrice(350.34);
+            myFurniture.setMaterial("Madeira");
+            myFurniture.setQuantity(4);
+            myFurniture.setWidth(4.0);
+            myFurniture.setHeight(2.5);
+            myFurniture.setAge(10);
+            myFurniture.exhibitionProductsData();
+        } catch (IllegalArgumentException e) {
+            System.out.println("Ocorreu um erro: " + e.getMessage());
+        } finally {
+            System.out.println("Operação encerrada");
+        }
 
         do {
             info_options();
@@ -45,7 +50,7 @@ public class App {
             switch (option) {
 
                 case 1:
-                    myHortifruti.exhibitionHortifruti();
+
                     break;
 
                 case 2:
