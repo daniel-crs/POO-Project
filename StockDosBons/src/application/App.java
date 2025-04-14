@@ -1,9 +1,14 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 import entities.Electronics;
 import entities.Furniture;
 import entities.Hortifruti;
-import java.util.Scanner;
+
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -35,6 +40,10 @@ public class App {
         myFurniture.setHeight(2.5);
         myFurniture.setAge(10);
         myFurniture.exhibitionProductsData();
+        List<Electronics> electronicList = new ArrayList<>();
+        List<Furniture> furnitureList = new ArrayList<>();
+        List<Hortifruti> hortiList = new ArrayList<>();
+
 
         do {
             info_options();
