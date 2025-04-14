@@ -35,6 +35,14 @@ public class Electronics extends Product {
         return yearLaunch;
     }
 
+    public Electronics(String name, double price, int quantity, String mark, String fabricator, String model, int yearLaunch) {
+        super(name, price, quantity);
+        this.mark = mark;
+        this.fabricator = fabricator;
+        this.model = model;
+        this.yearLaunch = yearLaunch;
+    }
+
     public void setYearLaunch(int yearLaunch) {
         this.yearLaunch = yearLaunch;
     }

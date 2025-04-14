@@ -11,30 +11,12 @@ public class App {
 
         int option, flag = 0;
 
-        Electronics myElectronic = new Electronics();
+        Electronics myElectronic = new Electronics("galaxy A21s",1200.00,11,"Samsung","Samsung","A21s",2020);
 
-        Furniture myFurniture = new Furniture();
+        Furniture myFurniture = new Furniture("guarda-roupa",330.34,4,4.0,2.5,"madeira",10);
         
         Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 30, 100);
 
-        myElectronic.setName("galax A21s");
-        myElectronic.setPrice(1200.00);
-        myElectronic.setQuantity(11);
-        myElectronic.setMark("Samsung");
-        myElectronic.setFabricator("Samsung");
-        myElectronic.setModel("A21s");
-        myElectronic.setYearLaunch(2020);
-        myElectronic.exhibitionProductsData();
-        
-
-        myFurniture.setName("Guarda-Roupa");
-        myFurniture.setPrice(350.34);
-        myFurniture.setMaterial("Madeira");
-        myFurniture.setQuantity(4);
-        myFurniture.setWidth(4.0);
-        myFurniture.setHeight(2.5);
-        myFurniture.setAge(10);
-        myFurniture.exhibitionProductsData();
 
         do {
             info_options();
@@ -47,13 +29,12 @@ public class App {
                 case 1:
                     myHortifruti.exhibitionHortifruti();
                     break;
-
                 case 2:
+                    myFurniture.exhibitionProductsData();
                     break;
-
                 case 3:
+                    myElectronic.exhibitionProductsData();
                     break;
-
                 case 0:
                     flag = 1;
                     break;

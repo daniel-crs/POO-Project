@@ -38,8 +38,17 @@ public class Furniture extends Product {
         this.age = age;
     }
 
+    public Furniture(String name, double price, int quantity, double height,double width,String material,int age) {
+        super(name, price, quantity);
+        this.height = height;
+        this.width= width;
+        this.material=material;
+        this.age=age;
+    }
+
     @Override
     public void exhibitionProductsData(){
+        super.exhibitionProductsData();
         System.out.println("Material: "+getMaterial());
         System.out.println("size:("+String.format("%.1f",getWidth())+
         "x"+String.format("%.1f",getHeight())+")m");
