@@ -1,11 +1,15 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 import entities.Electronics;
 import entities.Furniture;
 import entities.Hortifruti;
-import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
@@ -16,6 +20,10 @@ public class App {
         Furniture myFurniture = new Furniture("Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10);
 
         Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 35, 100);
+
+        List<Electronics> electronicList = new ArrayList<>();
+        List<Furniture> furnitureList = new ArrayList<>();
+        List<Hortifruti> hortiList = new ArrayList<>();
 
         do {
             info_options();
