@@ -1,9 +1,9 @@
 package application;
 
-import java.util.Scanner;
-import entities.Hortifruti;
 import entities.Electronics;
 import entities.Furniture;
+import entities.Hortifruti;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -11,20 +11,11 @@ public class App {
 
         int option, flag = 0;
 
-        Electronics myElectronic = new Electronics();
+        Electronics myElectronic = new Electronics("galax A21s", 1200.00, 11, "Samsung", "Samsung", "A21s", 2020);
 
-        Furniture myFurniture = new Furniture();
+        Furniture myFurniture = new Furniture("Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10);
 
         Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 35, 100);
-
-        myElectronic.setName("galax A21s");
-        myElectronic.setPrice(1200.00);
-        myElectronic.setQuantity(11);
-        myElectronic.setMark("Samsung");
-        myElectronic.setFabricator("Samsung");
-        myElectronic.setModel("A21s");
-        myElectronic.setYearLaunch(2020);
-        myElectronic.exhibitionProductsData();
 
         do {
             info_options();
@@ -39,9 +30,11 @@ public class App {
                     break;
 
                 case 2:
+                    myFurniture.exhibitionProductsData();
                     break;
 
                 case 3:
+                    myElectronic.exhibitionProductsData();
                     break;
 
                 case 0:

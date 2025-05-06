@@ -7,6 +7,25 @@ public class Electronics extends Product {
     private String model;
     private int yearLaunch;
 
+    public Electronics() {
+        super();
+    }
+
+    public Electronics(
+            String name,
+            double price,
+            int quantity,
+            String mark,
+            String fabricator,
+            String model,
+            int yearLaunch) {
+        super(name, price, quantity);
+        this.mark = mark;
+        this.fabricator = fabricator;
+        this.model = model;
+        this.yearLaunch = yearLaunch;
+    }
+
     public String getMark() {
         return mark;
     }
@@ -42,7 +61,7 @@ public class Electronics extends Product {
     @Override
     public void exhibitionProductsData() {
         super.exhibitionProductsData();
-        
+
         System.out.println("Marca: " + mark);
         System.out.println("Fabricante: " + fabricator);
         System.out.println("Modelo: " + model);
