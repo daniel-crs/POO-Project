@@ -15,17 +15,18 @@ public class App {
 
         int option, flag = 0;
 
-        Electronics myElectronic = new Electronics("galax A21s", 1200.00, 11, "Samsung", "Samsung", "A21s", 2020);
-
-        Furniture myFurniture = new Furniture("Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10);
-
-        Hortifruti myHortifruti = new Hortifruti("Banana", 5.00, 35, 100);
-
         List<Electronics> electronicList = new ArrayList<>();
         List<Furniture> furnitureList = new ArrayList<>();
         List<Hortifruti> hortiList = new ArrayList<>();
 
-        do {
+        electronicList.add(new Electronics("galax A21s", 1200.00, 11, "Samsung", "Samsung", "A21s", 2020));
+        electronicList.add(new Electronics("Smart TV Philco 43”", 1387.15, 5, "Philco", "Philco", "099433039", 2024));
+        furnitureList.add(new Furniture("Sofa", 1500.00, 5, 1.50, 2.00, "Wood", 10));
+        furnitureList.add(new Furniture("Cadeira", 350.99, 8, 55.00, 42.50,"Plástico e Metal", 2023));
+        hortiList.add(new Hortifruti("Banana", 5.00, 35, 100));
+        hortiList.add(new Hortifruti("Maça", 3.99, 30, 110));
+
+        do{
             info_options();
 
             System.out.print("\nChoose a option: ");
@@ -34,17 +35,20 @@ public class App {
             switch (option) {
 
                 case 1:
-                    myHortifruti.exhibitionHortifruti();
+                    for(int i = 0; i < hortiList.size(); i++){
+                        hortiList.get(i).exhibitionProductsData();
+                    }
                     break;
-
                 case 2:
-                    myFurniture.exhibitionProductsData();
+                    for(int i = 0; i < furnitureList.size(); i++){
+                        furnitureList.get(i).exhibitionProductsData();
+                    }
                     break;
-
                 case 3:
-                    myElectronic.exhibitionProductsData();
+                    for(int i = 0; i < electronicList.size(); i++){
+                        electronicList.get(i).exhibitionProductsData();
+                    }
                     break;
-
                 case 0:
                     flag = 1;
                     break;
