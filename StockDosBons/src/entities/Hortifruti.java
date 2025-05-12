@@ -11,24 +11,23 @@ public class Hortifruti extends Product {
     public Hortifruti(String name, double price, int quantity, double MiddleWeight) {
         super(name, price, quantity);
         this.MiddleWeight = MiddleWeight;
+        if(MiddleWeight != (int)MiddleWeight){
+            throw new IllegalArgumentException("Wight value is invalid.");
+        }
     }
 
     public double getMiddleWeight() {
         return MiddleWeight;
     }
-
     public void setMiddleWeight(double MiddleWeight) {
         this.MiddleWeight = MiddleWeight;
     }
-
     public double getTotalWeight() {
         return TotalWeight;
     }
-
     public void setTotalWeight(double TotalWeight) {
         this.TotalWeight = TotalWeight;
     }
-
     public void updateTotalValue() {
         TotalWeight = (MiddleWeight * quantity) / 1000;
     }

@@ -11,49 +11,39 @@ public class Electronics extends Product {
         super();
     }
 
-    public Electronics(
-            String name,
-            double price,
-            int quantity,
-            String mark,
-            String fabricator,
-            String model,
-            int yearLaunch) {
+    public Electronics( String name, double price, int quantity, String mark, String fabricator, String model, int yearLaunch) {
         super(name, price, quantity);
-        this.mark = mark;
-        this.fabricator = fabricator;
-        this.model = model;
-        this.yearLaunch = yearLaunch;
+        try{
+            this.mark = mark;
+            this.fabricator = fabricator;
+            this.model = model;
+            this.yearLaunch = yearLaunch;
+        }catch(IllegalArgumentException e){
+            System.err.println("Input Electronics() values is invalid: " + e);
+        }
     }
 
     public String getMark() {
         return mark;
     }
-
     public void setMark(String mark) {
         this.mark = mark;
     }
-
     public String getFabricator() {
         return fabricator;
     }
-
     public void setFabricator(String fabricator) {
         this.fabricator = fabricator;
     }
-
     public String getModel() {
         return model;
     }
-
     public void setModel(String model) {
         this.model = model;
     }
-
     public int getYearLaunch() {
         return yearLaunch;
     }
-
     public void setYearLaunch(int yearLaunch) {
         this.yearLaunch = yearLaunch;
     }
