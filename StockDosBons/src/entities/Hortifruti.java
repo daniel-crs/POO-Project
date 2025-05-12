@@ -19,14 +19,8 @@ public class Hortifruti extends Product {
     public double getMiddleWeight() {
         return MiddleWeight;
     }
-    public void setMiddleWeight(double MiddleWeight) {
-        this.MiddleWeight = MiddleWeight;
-    }
     public double getTotalWeight() {
         return TotalWeight;
-    }
-    public void setTotalWeight(double TotalWeight) {
-        this.TotalWeight = TotalWeight;
     }
     public void updateTotalValue() {
         TotalWeight = (MiddleWeight * quantity) / 1000;
