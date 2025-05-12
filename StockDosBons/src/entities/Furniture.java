@@ -18,7 +18,7 @@ public class Furniture extends Product {
             this.material = material;
             this.age = age;
         }catch(IllegalArgumentException e){
-            System.err.println("Input Furniture() values is invalid: " + e);
+            System.err.println("Input Furniture() values is invalid: " + e.getMessage());
         }
     }
 

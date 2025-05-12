@@ -19,7 +19,7 @@ public class Electronics extends Product {
             this.model = model;
             this.yearLaunch = yearLaunch;
         }catch(IllegalArgumentException e){
-            System.err.println("Input Electronics() values is invalid: " + e);
+            System.err.println("Input Electronics() values is invalid: " + e.getMessage());
         }
     }
 

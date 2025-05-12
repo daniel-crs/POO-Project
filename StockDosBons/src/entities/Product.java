@@ -14,7 +14,7 @@ public class Product {
             this.price = price;
             this.quantity = quantity;
         } catch (IllegalArgumentException e) {
-            System.err.println("The input Product() values ​​are invalid: "+ e);
+            System.err.println("The input Product() values ​​are invalid: "+ e.getMessage());
         }
     }
 
