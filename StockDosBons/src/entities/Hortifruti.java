@@ -4,10 +4,6 @@ public class Hortifruti extends Product {
     private double MiddleWeight;
     private double TotalWeight;
 
-    public  Hortifruti() {
-        super();
-    }
-
     public Hortifruti(String name, double price, int quantity, double MiddleWeight) {
         super(name, price, quantity);
         this.MiddleWeight = MiddleWeight;

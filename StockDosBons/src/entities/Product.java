@@ -5,16 +5,13 @@ public class Product {
     protected double price;
     protected int quantity;
 
-    public Product() {
-    }
-
     public Product(String name, double price, int quantity) {
         try {
             this.name = name;
             this.price = price;
             this.quantity = quantity;
         } catch (IllegalArgumentException e) {
-            System.err.println("The input Product() values ​​are invalid: "+ e);
+            System.err.println("The input Product() values ​​are invalid: "+ e.getMessage());
         }
     }
 

@@ -35,29 +35,27 @@ public class App {
             switch (option) {
 
                 case 1:
-                    for(int i = 0; i < hortiList.size(); i++){
-                        hortiList.get(i).exhibitionProductsData();
+                    for(Hortifruti hort : hortiList){
+                        hort.exhibitionProductsData();
                     }
                     break;
                 case 2:
-                    for(int i = 0; i < furnitureList.size(); i++){
-                        furnitureList.get(i).exhibitionProductsData();
+                    for(Furniture furn : furnitureList){
+                        furn.exhibitionProductsData();
                     }
                     break;
                 case 3:
-                    for(int i = 0; i < electronicList.size(); i++){
-                        electronicList.get(i).exhibitionProductsData();
+                    for(Electronics elec : electronicList){
+                        elec.exhibitionProductsData();
                     }
                     break;
                 case 0:
                     flag = 1;
                     break;
-
             }
         } while (flag != 1);
 
         System.out.println("Finalizando!!!");
-
         input.close();
     }
 

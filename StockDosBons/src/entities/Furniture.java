@@ -6,10 +6,6 @@ public class Furniture extends Product {
     private String material;
     private int age;
 
-    public Furniture() {
-        super();
-    }
-
     public Furniture(String name, double price, int quantity, double height, double width, String material, int age) {
         super(name, price, quantity);
         try{
@@ -18,7 +14,7 @@ public class Furniture extends Product {
             this.material = material;
             this.age = age;
         }catch(IllegalArgumentException e){
-            System.err.println("Input Furniture() values is invalid: " + e);
+            System.err.println("Input Furniture() values is invalid: " + e.getMessage());
         }
     }
 
