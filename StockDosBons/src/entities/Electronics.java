@@ -7,10 +7,6 @@ public class Electronics extends Product {
     private String model;
     private int yearLaunch;
 
-    public Electronics() {
-        super();
-    }
-
     public Electronics( String name, double price, int quantity, String mark, String fabricator, String model, int yearLaunch) {
         super(name, price, quantity);
         try{
@@ -19,7 +15,7 @@ public class Electronics extends Product {
             this.model = model;
             this.yearLaunch = yearLaunch;
         }catch(IllegalArgumentException e){
-            System.err.println("Input Electronics() values is invalid: " + e);
+            System.err.println("Input Electronics() values is invalid: " + e.getMessage());
         }
     }
 
